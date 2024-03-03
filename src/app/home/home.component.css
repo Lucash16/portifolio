@@ -1,26 +1,20 @@
-body {
+header {
+    height: 80px;
     display: grid;
-    grid-template-rows: 80px 1fr; /* 1fr ocupa o restante da altura da tela */
+    justify-content: start;
+    align-items: center;
+    
 }
 
 .tool-bar {
-    height: 80px;
-    width: 100%;
-    display: flex;
-}
-
-nav {
-    display: flex;
-}
-
-nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
+    margin-left: 4px;
 }
 
-.tool-bar nav li {
+.tool-bar li {
     width: 150px;
     box-sizing: border-box;
     text-align: center;
@@ -28,19 +22,11 @@ nav ul {
     line-height: 80px;
 }
 
-.tool-bar nav a {
+.tool-bar a {
     text-decoration: none;
     color: #C5C5C5; 
     font-weight: 400;
     font-size: 20px; 
-}
-
-.tool-bar nav > div {
-    margin-left: auto;
-    padding-right: 40px;
-    height: 80px;
-    display: flex;
-    align-items: center;
 }
 
 .software-engineer {
@@ -49,39 +35,67 @@ nav ul {
     right: 0; 
     color: #C5C5C5;
     font-size: 20px;
+    margin-left: auto;
+    padding-right: 40px;
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
-.name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 500px;
-    margin-left: 40px;
+
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    height: calc(100vh - 80px);
+    align-items: center;
     color: #C5C5C5;
+}
+
+.left-column,
+.right-column {
+    padding: 3em;
+}
+
+#left {
     text-align: start;
 }
 
-.name-text-lucas,
-.name-text-henrique {
-    display: inline-block;
-    margin: 0;
+#right {
+    text-align: end;
 }
+
 
 .name-text-lucas {
     font-size: 48px;
     font-weight: lighter;
+    margin: 0;
     margin-bottom: -30px;
-    margin-left: 2px;
 }
 
 .name-text-henrique {
     font-size: 96px;
     font-weight: 1000;
     font-family: 'Roboto Condensed';
-    margin-bottom: -10px;
+    margin: 0;
 }
 
-.name nav img {
+
+.media-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-left: 4px;
+}
+
+
+.media-list img {
     width: 50px;
     margin-right: 25px;
+}
+
+.hello-word {
+    font-size: 32px;
+    font-weight: lighter;
 }
