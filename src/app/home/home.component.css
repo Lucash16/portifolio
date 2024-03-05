@@ -3,7 +3,8 @@ header {
     display: grid;
     justify-content: start;
     align-items: center;
-    
+    position: fixed;
+    background-color: #4C5B61;
 }
 
 .tool-bar {
@@ -30,6 +31,7 @@ header {
 }
 
 .software-engineer {
+    background-color: #4C5B61;
     position: fixed; 
     top: 0; 
     right: 0; 

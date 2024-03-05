@@ -1,0 +1,46 @@
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    height: calc(100vh - 80px);
+    align-items: center;
+    color: #C5C5C5;
+}
+
+.left-column,
+.right-column {
+    padding: 3em;
+}
+
+#left {
+    text-align: right;
+}
+
+#right {
+    text-align: left;
+}
+
+
+.picture-frame {
+    width: 70%;  /* Ajuste a largura conforme necessário */
+    height: 600px; /* Ajuste a altura conforme necessário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    overflow: hidden;
+}
+
+.picture-frame img {
+    filter: grayscale(100%);
+    display: block;
+    width: 100%; /* Faz a imagem ocupar 100% da largura da div */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+
+.textBox {
+    width: 70%; /* Ajuste a largura conforme necessário */
+    height: 600px;
+    padding: 20px;
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    text-align: center; /* Centraliza o conteúdo dentro da div */
+}
